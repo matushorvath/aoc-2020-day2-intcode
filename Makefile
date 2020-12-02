@@ -14,7 +14,7 @@ all: build run
 build: b.input
 
 run: build
-	$(ICVM) b.input < input
+	$(ICVM) b.input < input || true
 
 clean:
 	rm -f b.input b.o
